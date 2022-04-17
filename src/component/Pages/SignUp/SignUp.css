@@ -1,4 +1,3 @@
-
 .login-container {
     position: relative;
     width: 550px;
@@ -8,7 +7,7 @@
     padding: 40px;
     box-sizing: border-box;
     background: #1E1E1E;
-    
+
     box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
 }
 
@@ -42,11 +41,12 @@
     margin-bottom: 4px;
     color: gray;
     margin: 15px 0 5px 5px;
-    
+
 }
 
 .login-container input::placeholder {
     color: gray;
+    font-size: 18px;
 }
 
 .login-container input {
@@ -56,7 +56,7 @@
     padding-left: 20px;
     height: 50px;
     color: #a9a9a9;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 50px;
     box-shadow: inset 6px 6px 6px #cbced1, ;
 }
@@ -78,11 +78,103 @@
 }
 
 
-.error-message{
+.error-message {
     font-size: 12px;
     color: red;
-    margin:10px;
+    margin: 10px;
 }
-.error-message::before{
+
+.error-message::before {
     content: "❌ ";
+}
+
+@media only screen and (max-width: 479px) {
+
+
+    .login-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        /* padding: 40px; */
+        box-sizing: border-box;
+        background: #1E1E1E;
+        box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+    }
+
+
+    .login-title {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 900;
+        font-size: 1.8rem;
+        color: #1da1f2;
+        letter-spacing: 1px;
+    }
+
+    .login-form {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .login-container label,
+    .login-container input,
+    .login-container button {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .login-container label {
+        margin-bottom: 4px;
+        color: gray;
+        margin: 15px 0 5px 5px;
+
+    }
+
+    .login-container input::placeholder {
+        color: gray;
+        font-size: 18px;
+    }
+
+    .login-container input {
+        background: #2A2D2E;
+        margin: 15px 0 0 0;
+        padding: 10px;
+        padding-left: 20px;
+        height: 50px;
+        color: #a9a9a9;
+        font-size: 18px;
+        border-radius: 50px;
+        box-shadow: inset 6px 6px 6px #cbced1, ;
+    }
+
+    .login-container button {
+        color: white;
+        margin-top: 20px;
+        background: #1da1f2;
+        height: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-weight: 900;
+        box-shadow: 6px 6px 6px #2A2D2E, -6px -6px 6px 2A2D2E;
+        transition: 0.5s;
+    }
+
+    .login-container button:hover {
+        box-shadow: none;
+    }
+
+
+    .error-message {
+        font-size: 12px;
+        color: red;
+        margin: 10px;
+    }
+
+    .error-message::before {
+        content: "❌ ";
+    }
 }

@@ -23,7 +23,7 @@ const Home = () => {
                 <div className="banner text">
                     <div className="text-box w-50 text-white">
                         <span className='title-header'>Shape your Body</span>
-                        <h1>Be <span className='strong'> Strong</span> <br /> Training Hard</h1>
+                        <h1>Be <span style={{color: "#f36100"}}> Strong</span>  Training Hard</h1>
                     </div>
                 </div>
             </section>
