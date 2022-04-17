@@ -13,7 +13,7 @@ const ServicesPage = () => {
     const [enroll] = useHook();
     return (
         <div>
-            <section className="breadcrumb-section set-bg">
+            <section className="breadcrumb-section set-bg-2">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12 text-center">
@@ -95,7 +95,7 @@ const ServicesPage = () => {
                                 <h4>Personal training</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore
                                     facilisis.</p>
-                                <a href="#">Explore</a>
+                                <Link to="/">Explore</Link>
                             </div>
                         </div>
                         <div className="col-lg-3 order-lg-3 col-md-6 p-0">

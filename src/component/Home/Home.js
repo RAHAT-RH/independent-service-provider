@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faDumbbell, faEnvelope, faMapLocation, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import photoCalass01 from '../../img/classes/class-1.jpg'
 import photoCalass03 from '../../img/classes/class-3.jpg'
