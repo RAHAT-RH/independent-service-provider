@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../fireBase.init';
@@ -8,8 +8,7 @@ import './SignUp.css'
 
 const SignUp = () => {
     const navigate = useNavigate();
-    const location = useLocation();
-    const from = location?.state?.pathname || "/";
+    
 
     const [userInfo, setUserInfo] = useState({
         email: "",
@@ -28,9 +27,12 @@ const SignUp = () => {
     useEffect(()=>{
         if(user){
             toast('Create Account Successfully')
-            navigate(from, {replace: true});
+            navigate('/');
         }
     },[user])
+
+
+    
    
 
     const handleEmail = (event) => {
