@@ -38,7 +38,7 @@ const LogIn = () => {
 
     useEffect(() => {
         if (error2) {
-            switch (error?.code) {
+            switch (error2?.code) {
                 case "auth/invalid-email":
                     toast("please provide a valid email");
                     break;

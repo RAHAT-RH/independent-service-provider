@@ -1,14 +1,43 @@
 import React, { useEffect, useState } from 'react';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../fireBase.init';
+import Loading from '../../../Loading/Loading';
 import './SignUp.css'
 
 const SignUp = () => {
     const navigate = useNavigate();
-    
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
+    const [signInWithGoogle, user2, loading2, error2] = useSignInWithGoogle(auth);
+
+    useEffect(() => {
+        if (user2) {
+            toast('Log In Successfully');
+            navigate(from, {replace: true});
+        }
+    }, [user2])
+
+    if(loading2){
+        <Loading></Loading>
+    }
+
+    useEffect(() => {
+        if (error2) {
+            switch (error2?.code) {
+                case "auth/invalid-email":
+                    toast("please provide a valid email");
+                    break;
+                case "auth/invalid-password":
+                    toast("Wrong password. Intruder!!");
+                    break;
+                default:
+                    toast("Close by user");
+            }
+        }
+    }, [error2]);
 
     const [userInfo, setUserInfo] = useState({
         email: "",
@@ -92,8 +121,13 @@ const SignUp = () => {
 
     const handleForm = (event) => {
         event.preventDefault()
-        createUserWithEmailAndPassword(userInfo.email, userInfo.password);
-        
+        createUserWithEmailAndPassword(userInfo.email, userInfo.password);   
+    }
+
+    // handle Google Sign In
+
+    const handleGoogleSignIn = () =>{
+        signInWithGoogle()
     }
 
 
@@ -117,7 +151,7 @@ const SignUp = () => {
                     {/* {hookError && <p className="error-message">{hookError?.message}</p>} */}
                     <ToastContainer theme='dark'/>
                 </form>
-                <button>Google Sign up</button>
+                <button onClick={handleGoogleSignIn}>Google Sign up</button>
             </div>
             
         </div>
