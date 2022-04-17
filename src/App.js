@@ -10,6 +10,7 @@ import PlaceOrder from './component/Pages/PlaceOrder/PlaceOrder';
 import ServicesPage from './component/Pages/ServicesPage/ServicesPage';
 import SignUp from './component/Pages/SignUp/SignUp';
 import RequireAuth from './component/RequireAuth/RequireAuth';
+import ResetPassword from './component/ResetPassword/ResetPassword';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/reset-password' element={<ResetPassword></ResetPassword>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
       </Routes>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../fireBase.init';
@@ -136,15 +136,16 @@ const SignUp = () => {
             <div className="login-container ">
                 <div className="login-title">Sign up</div>
                 <form onSubmit={handleForm} className="login-form">
-                    <input onBlur={handleEmail} type="text" placeholder="Your Email" />
+                    
+                    <input onBlur={handleEmail} type="email" name='email' placeholder="Your Email" />
                     {errors?.emailError && <p className="error-message">{errors.emailError}</p>}
-
+                    
                     <input onBlur={handlePassword} type="password" placeholder="password" />
                     {errors?.passwordError && <p className="error-message">{errors.passwordError}</p>}
 
                     <input onBlur={handleConfirmPassword} type="password" placeholder="confirm password" />
                     {errors?.confirmPassError && <p className="error-message">{errors.confirmPassError}</p>}
-
+                    <span className='note text-danger'>Already Have An Account? <Link to='/login' className='btn text-white'>Log In</Link></span>
                     <button type='submit'>Sign up</button>
 
                     {/* {error && <p className="error-message">{error}</p> } */}

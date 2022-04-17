@@ -132,12 +132,12 @@ const LogIn = () => {
                 {errors?.emailError && <p className="error-message">{errors.emailError}</p>}
 
                 <input onBlur={handlePassword} type="password" placeholder="password" />
+                <p className='text-end'>Forget password? <Link to='/reset-password'>Click Here</Link> </p>
                 {errors?.passwordError && <p className="error-message">{errors.passwordError}</p>}
 
 
-
                 <button type='submit'>Log In</button>
-                <span className='note text-danger'>Already Have An Account? <Link to='/signup' className='btn text-white'>Sign Up</Link></span>
+                
             </form>
             <ToastContainer theme="dark" />
             <button onClick={handleGoogle}>Google Log In</button>
