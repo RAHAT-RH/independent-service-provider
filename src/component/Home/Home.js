@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleRight, faDumbbell } from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight, faDumbbell, faFilter, faHeartbeat, faSwimmingPool, faTransgender } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import photoCalass01 from '../../img/classes/class-1.jpg'
 import photoCalass03 from '../../img/classes/class-3.jpg'
@@ -41,7 +41,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
-                                <span><FontAwesomeIcon className='flaticon-034-stationary-bike' icon={faDumbbell}></FontAwesomeIcon></span>
+                                <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faFilter}></FontAwesomeIcon></span>
                                 <h4>Modern equipment</h4>
                                 <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                     dolore facilisis.</p>
@@ -49,7 +49,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
-                                <span><FontAwesomeIcon className='flaticon-034-stationary-bike' icon={faDumbbell}></FontAwesomeIcon></span>
+                                <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faHeartbeat}></FontAwesomeIcon></span>
 
                                 <h4>Healthy nutrition plan</h4>
                                 <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
@@ -58,7 +58,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
-                                <span><FontAwesomeIcon className='flaticon-034-stationary-bike' icon={faDumbbell}></FontAwesomeIcon></span>
+                                <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faDumbbell}></FontAwesomeIcon></span>
                                 <h4>Proffesponal training plan</h4>
                                 <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                     dolore facilisis.</p>
@@ -66,7 +66,7 @@ const Home = () => {
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
-                                <span><FontAwesomeIcon className='flaticon-034-stationary-bike' icon={faDumbbell}></FontAwesomeIcon></span>
+                                <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faSwimmingPool}></FontAwesomeIcon></span>
                                 <h4>Unique to your needs</h4>
                                 <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
                                     facilisis.</p>
