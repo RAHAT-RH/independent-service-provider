@@ -15,7 +15,7 @@ const About = () => {
                     <div className="row">
                         <div className="col-lg-12 text-center">
                             <div className="breadcrumb-text">
-                                <h2>About us</h2>
+                                <h2>About</h2>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,7 @@ const About = () => {
                             <div className="cs-item">
                             <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faFilter}></FontAwesomeIcon></span>
                                 <h4>Modern equipment</h4>
-                                <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    dolore facilisis.</p>
+                                <p className='text-color'>Exercise can help prevent excess weight gain or help maintain weight loss. When you engage in physical activity, you burn calories.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
@@ -46,24 +45,21 @@ const About = () => {
                             <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faHeartbeat}></FontAwesomeIcon></span>
 
                                 <h4>Healthy nutrition plan</h4>
-                                <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                    facilisis.</p>
+                                <p className='text-color'>Regular trips to the gym are great, but don't worry if you can't find a large chunk of time to exercise every day...</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
                             <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faDumbbell}></FontAwesomeIcon></span>
-                                <h4>Proffesponal training plan</h4>
-                                <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    dolore facilisis.</p>
+                                <h4>Professional training plan</h4>
+                                <p className='text-color'>No matter what your current weight is, being active boosts high-density lipoprotein (HDL) cholesterol, ....</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
                             <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faSwimmingPool}></FontAwesomeIcon></span>
                                 <h4>Unique to your needs</h4>
-                                <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                    facilisis.</p>
+                                <p className='text-color'>Winded by grocery shopping or household chores? Regular physical activity can ....</p>
                             </div>
                         </div>
                     </div>
@@ -84,13 +80,10 @@ const About = () => {
                     <div className="about-text">
                         <div className="section-title">
                             <span>About</span>
-                            <h2>What we have done</h2>
+                            <h2>What I want to do in life</h2>
                         </div>
                         <div className="at-desc">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
-                                viverra maecenas accumsan lacus vel facilisis. aliquip ex ea commodo consequat sit amet,
-                                consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                            <p>My name is Rahat. One of my goals is to become a good quality web developer through hard work. I have had to give up a lot to get this far. I have come to this position in the midst of many difficulties and I hope I will stick with it in the future as well. I can never express my attitude. I will do everything I need to be a good web developer.</p>
                         </div>
                         
                     </div>
@@ -105,7 +98,7 @@ const About = () => {
                 <div className="col-lg-12">
                     <div className="team-title">
                         <div className="section-title">
-                            <span>Our Team</span>
+                            <span>my Team</span>
                             <h2>TRAIN WITH EXPERTS</h2>
                         </div>
                         <Link to="/" className="primary-btn btn-normal appoinment-btn">appointment</Link>

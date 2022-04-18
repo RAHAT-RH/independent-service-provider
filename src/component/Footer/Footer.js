@@ -1,6 +1,7 @@
-import { faEnvelope, faHeart, faMapLocation, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeart, faHeartbeat, faMapLocation, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -43,25 +44,18 @@ const Footer = () => {
                                 <div className="fa-logo">
                                     <a href="/"><img src="img/logo.png" alt="" /></a>
                                 </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    labore dolore magna aliqua endisse ultrices gravida lorem.</p>
-                                <div className="fa-social">
-                                    <a href="/"><i className="fa fa-facebook"></i></a>
-                                    <a href="/"><i className="fa fa-twitter"></i></a>
-                                    <a href="/"><i className="fa fa-youtube-play"></i></a>
-                                    <a href="/"><i className="fa fa-instagram"></i></a>
-                                    <a href="/"><i className="fa  fa-envelope-o"></i></a>
-                                </div>
+                                <p>Exercise and physical activity are great ways to feel better, boost your health and have fun. For most healthy adults, the U.S. Department of Health and Human Services recommends these exercise guidelines:</p>
+                                
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-3 col-sm-6">
                             <div className="fs-widget">
                                 <h4>Useful links</h4>
                                 <ul>
-                                    <li><a href="/">About</a></li>
-                                    <li><a href="/">Blog</a></li>
-                                    <li><a href="/">Classes</a></li>
-                                    <li><a href="/">Contact</a></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/blog">Blog</Link></li>
+                                    <li><Link to="/services">Services</Link></li>
+                                    <li><Link to="/">Home</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -69,10 +63,10 @@ const Footer = () => {
                             <div className="fs-widget">
                                 <h4>Support</h4>
                                 <ul>
-                                    <li><a href="/">Login</a></li>
-                                    <li><a href="/">My account</a></li>
-                                    <li><a href="/">Subscribe</a></li>
-                                    <li><a href="/">Contact</a></li>
+                                    <li><Link to="/">Login</Link></li>
+                                    <li><Link to="/">My account</Link></li>
+                                    <li><Link to="/">Subscribe</Link></li>
+                                    <li><Link to="/">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,14 +74,14 @@ const Footer = () => {
                             <div className="fs-widget">
                                 <h4>Tips & Guides</h4>
                                 <div className="fw-recent">
-                                    <h6><a href="/">Physical fitness may help prevent depression, anxiety</a></h6>
+                                    <h6><Link to="/">Physical fitness may help prevent depression, anxiety</Link></h6>
                                     <ul>
                                         <li>3 min read</li>
                                         <li>20 Comment</li>
                                     </ul>
                                 </div>
                                 <div className="fw-recent">
-                                    <h6><a href="/">Fitness: The best exercise to lose belly fat and tone up...</a></h6>
+                                    <h6><Link to="/">Fitness: The best exercise to lose belly fat and tone up...</Link></h6>
                                     <ul>
                                         <li>3 min read</li>
                                         <li>20 Comment</li>
@@ -100,7 +94,7 @@ const Footer = () => {
                         <div className="col-lg-12 text-center">
                             <div className="copyright-text">
                                 <p>
-                                    Copyright &copy; All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true"> <FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> </i> by Rahat
+                                    Copyright &copy; All rights reserved 2022 | This template is made with <i><FontAwesomeIcon icon={faHeart}></FontAwesomeIcon> </i> by Rahat
                                 </p>
                             </div>
                         </div>

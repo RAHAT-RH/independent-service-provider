@@ -33,7 +33,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="section-title my-5 text-center">
-                                <span className='color'>Why chose us?</span>
+                                <span className='color'>Why chose me as a personal trainer?</span>
                                 <h2 className='text-white'>PUSH YOUR LIMITS FORWARD</h2>
                             </div>
                         </div>
@@ -42,9 +42,8 @@ const Home = () => {
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
                                 <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faFilter}></FontAwesomeIcon></span>
-                                <h4>Modern equipment</h4>
-                                <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    dolore facilisis.</p>
+                                <h4>Exercise improves mood</h4>
+                                <p className='text-color'>Exercise can help prevent excess weight gain or help maintain weight loss. When you engage in physical activity, you burn calories. </p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
@@ -52,24 +51,21 @@ const Home = () => {
                                 <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faHeartbeat}></FontAwesomeIcon></span>
 
                                 <h4>Healthy nutrition plan</h4>
-                                <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                    facilisis.</p>
+                                <p className='text-color'>Regular trips to the gym are great, but don't worry if you can't find a large chunk of time to exercise every day... </p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
                                 <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faDumbbell}></FontAwesomeIcon></span>
-                                <h4>Proffesponal training plan</h4>
-                                <p className='text-color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                    dolore facilisis.</p>
+                                <h4>Professional training plan</h4>
+                                <p className='text-color'>No matter what your current weight is, being active boosts high-density lipoprotein (HDL) cholesterol, ... </p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-sm-6">
                             <div className="cs-item">
                                 <span><FontAwesomeIcon style={{fontSize: "30px"}} icon={faSwimmingPool}></FontAwesomeIcon></span>
                                 <h4>Unique to your needs</h4>
-                                <p className='text-color'>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                                    facilisis.</p>
+                                <p className='text-color'>Winded by grocery shopping or household chores? Regular physical activity can ...</p>
                             </div>
                         </div>
                     </div>

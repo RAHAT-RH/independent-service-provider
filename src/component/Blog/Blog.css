@@ -1,0 +1,6 @@
+.set-bg-15{
+    background: url(../../img/blog/details/details-hero.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+}
