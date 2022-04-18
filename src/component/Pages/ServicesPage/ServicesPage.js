@@ -102,7 +102,7 @@ const ServicesPage = () => {
                         <div className="col-lg-3 order-lg-4 col-md-6 p-0">
                             <div className="ss-text">
                                 <h4>Group fitness classes</h4>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus.</p>
+                                <p>Most gyms are going to be full of everything you’ll ever need for your workouts. From rowing machines to saunas, treadmills to free weights, whatever fitness goals you want to achieve you’ll find the equipment to get you there at the gym.</p>
                                 <a href="/">Explore</a>
                             </div>
                         </div>
@@ -114,8 +114,7 @@ const ServicesPage = () => {
                         <div className="col-lg-3 order-lg-6 col-md-6 p-0">
                             <div className="ss-text second-row">
                                 <h4>Body building</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore
-                                    facilisis.</p>
+                                <p>Additionally, there should always be a qualified instructor in your gym to help you use the machines and exercise correctly. Priceless when you’re just starting out.</p>
                                 <a href="/">Explore</a>
                             </div>
                         </div>
@@ -127,7 +126,7 @@ const ServicesPage = () => {
                         <div className="col-lg-3 order-lg-5 col-md-6 p-0">
                             <div className="ss-text second-row">
                                 <h4>Strength training</h4>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus.</p>
+                                <p>Additionally, there should always be a qualified instructor in your gym to help you use the machines and exercise correctly. Priceless when you’re just starting out.</p>
                                 <a href="/">Explore</a>
                             </div>
                         </div>

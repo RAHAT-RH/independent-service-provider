@@ -145,11 +145,10 @@ const SignUp = () => {
 
                     <input onBlur={handleConfirmPassword} type="password" placeholder="confirm password" />
                     {errors?.confirmPassError && <p className="error-message">{errors.confirmPassError}</p>}
-                    <span className='note text-danger'>Already Have An Account? <Link to='/login' className='btn text-white'>Log In</Link></span>
+                    <span className='note text-danger'>Already Have An Account? <Link to='/login' className=' text-primary'>Log In</Link></span>
                     <button type='submit'>Sign up</button>
 
-                    {/* {error && <p className="error-message">{error}</p> } */}
-                    {/* {hookError && <p className="error-message">{hookError?.message}</p>} */}
+                    
                     <ToastContainer theme='dark'/>
                 </form>
                 <button onClick={handleGoogleSignIn}>Google Sign up</button>

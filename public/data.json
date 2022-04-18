@@ -8,7 +8,8 @@
         "number03": "Weight losing classes",
         "number04": "❌",
         "number05": "❌",
-        "number06": "❌"
+        "number06": "❌",
+        "img": "https://i.ibb.co/d2580z1/02.jpg"
     },
     {   "id": 2,
         "name": "12 Month unlimited",
@@ -19,7 +20,8 @@
         "number03": "Weight losing classes",
         "number04": "Grow Mussels",
         "number05": "No time restriction",
-        "number06": "Extra Food Care ing"
+        "number06": "Extra Food Care ing",
+        "img": "https://i.ibb.co/GTdsXfc/01.jpg"
     },
     {   "id": 3,
         "name": "6 Month unlimited",
@@ -30,6 +32,8 @@
         "number03": "Weight losing classes",
         "number04": "❌",
         "number05": "No time restriction",
-        "number06": "❌"
+        "number06": "❌",
+        "img": "https://i.ibb.co/FK306VM/4.jpg"
     }
 ]
+

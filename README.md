@@ -1,3 +1,21 @@
+# Fitness Gym Center
+
+## Project link
+
+Site live link: [https://assignment-9-rahat.netlify.app/](https://assignment-9-rahat.netlify.app/)
+
+## Github link
+
+Github link: [https://github.com/programming-hero-web-course-4/product-analysis-website-RAHAT-RH](https://github.com/programming-hero-web-course-4/product-analysis-website-RAHAT-RH)
+
+### About Amazon Home Theater System
+
+* Use custom link for active route menu.
+* Use External hook.
+* Added reChart line chart, pai chart, area chart, BarChart
+* Use Bootstrap Css
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

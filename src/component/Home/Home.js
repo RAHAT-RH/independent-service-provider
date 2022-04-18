@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faDumbbell, faFilter, faHeartbeat, faSwimmingPool, faTransgender } from '@fortawesome/free-solid-svg-icons';
-import React, { useEffect, useState } from 'react';
 import photoCalass01 from '../../img/classes/class-1.jpg'
 import photoCalass03 from '../../img/classes/class-3.jpg'
 import photoCalass04 from '../../img/classes/class-4.jpg'
@@ -22,7 +21,7 @@ const Home = () => {
             <section>
                 <div className="banner text">
                     <div className="text-box w-50 text-white">
-                        <span className='title-header'>Shape your Body</span>
+                        <span className='title-header'>Shape your Body Fit Your Body</span>
                         <h1>Be <span style={{color: "#f36100"}}> Strong</span>  Training Hard</h1>
                     </div>
                 </div>
@@ -92,7 +91,7 @@ const Home = () => {
                                 <div className="ci-text">
                                     <span>STRENGTH</span>
                                     <h5>Weightlifting</h5>
-                                    <a href="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></a>
+                                    <Link to="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -104,7 +103,7 @@ const Home = () => {
                                 <div className="ci-text">
                                     <span>Cardio</span>
                                     <h5>Indoor cycling</h5>
-                                    <a href="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></a>
+                                    <Link to="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +115,7 @@ const Home = () => {
                                 <div className="ci-text">
                                     <span>STRENGTH</span>
                                     <h5>Kettlebell power</h5>
-                                    <a href="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></a>
+                                    <Link to="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +127,7 @@ const Home = () => {
                                 <div className="ci-text">
                                     <span>Cardio</span>
                                     <h4>Indoor cycling</h4>
-                                    <a href="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></a>
+                                    <Link to="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -140,7 +139,7 @@ const Home = () => {
                                 <div className="ci-text">
                                     <span>Training</span>
                                     <h4>Boxing</h4>
-                                    <a href="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></a>
+                                    <Link to="/"><i><FontAwesomeIcon className='i' icon={faAngleRight}></FontAwesomeIcon></i></Link>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +163,7 @@ const Home = () => {
 
                         {
                             enroll.map(enrolls =>
-                                <div key={enrolls.id} className="col-lg-4 col-md-8">
+                                <div key={enrolls.id} style={{background:`url(${enrolls.img})`, backgroundSize: 'cover'}} className="col-lg-4 col-md-8 check-out">
                                     <div className="ps-item">
                                         <h3>{enrolls.name}</h3>
                                         <div className="pi-price">

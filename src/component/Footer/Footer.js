@@ -1,4 +1,4 @@
-import { faEnvelope, faHeart, faHeartbeat, faMapLocation, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeart, faMapLocation, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';

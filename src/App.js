@@ -4,6 +4,7 @@ import Blog from './component/Blog/Blog';
 import Footer from './component/Footer/Footer';
 import Header from './component/Header/Header';
 import Home from './component/Home/Home';
+import NotFoundPage from './component/NotFoundPage/NotFoundPage';
 import About from './component/Pages/About/About';
 import LogIn from './component/Pages/LogIn/LogIn';
 import PlaceOrder from './component/Pages/PlaceOrder/PlaceOrder';
@@ -30,6 +31,7 @@ function App() {
         <Route path='/reset-password' element={<ResetPassword></ResetPassword>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
+        <Route path='*' element={<NotFoundPage></NotFoundPage>}></Route>
       </Routes>
       <Footer></Footer>
     </div>

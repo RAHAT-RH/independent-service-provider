@@ -17,7 +17,7 @@
     margin-top: 10px;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #1da1f2;
+    color: #F7914D;
     letter-spacing: 1px;
 }
 
@@ -64,7 +64,7 @@
 .login-container button {
     color: white;
     margin-top: 20px;
-    background: #1da1f2;
+    background: #F7914D;
     height: 40px;
     border-radius: 20px;
     cursor: pointer;
@@ -107,7 +107,7 @@
         margin-top: 10px;
         font-weight: 900;
         font-size: 1.8rem;
-        color: #1da1f2;
+        color: #F7914D;
         letter-spacing: 1px;
     }
 
@@ -154,7 +154,7 @@
     .login-container button {
         color: white;
         margin-top: 20px;
-        background: #1da1f2;
+        background: #F7914D;
         height: 40px;
         border-radius: 20px;
         cursor: pointer;

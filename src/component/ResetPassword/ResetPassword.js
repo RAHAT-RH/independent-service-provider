@@ -8,7 +8,7 @@ const ResetPassword = () => {
     const handleEmail = (event) => {
         setEmail(event.target.value)
     }
-    const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(auth);
+    const [sendPasswordResetEmail,  error] = useSendPasswordResetEmail(auth);
 
     useEffect(() => {
         if (error) {
