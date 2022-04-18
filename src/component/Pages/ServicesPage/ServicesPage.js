@@ -102,8 +102,8 @@ const ServicesPage = () => {
                         <div className="col-lg-3 order-lg-4 col-md-6 p-0">
                             <div className="ss-text">
                                 <h4>Group fitness classes</h4>
-                                <p>Most gyms are going to be full of everything you’ll ever need for your workouts. From rowing machines to saunas, treadmills to free weights, whatever fitness goals you want to achieve you’ll find the equipment to get you there at the gym.</p>
-                                <a href="/">Explore</a>
+                                <p>Most gyms are going to be full of everything you’ll ever need for your workouts. From rowing machines to saunas, treadmills to free weights, whatever fitness goals you want to </p>
+                                <Link to="/">Explore</Link>
                             </div>
                         </div>
                         <div className="col-lg-3 order-lg-8 col-md-6 p-0">
@@ -115,7 +115,7 @@ const ServicesPage = () => {
                             <div className="ss-text second-row">
                                 <h4>Body building</h4>
                                 <p>Additionally, there should always be a qualified instructor in your gym to help you use the machines and exercise correctly. Priceless when you’re just starting out.</p>
-                                <a href="/">Explore</a>
+                                <Link to="/">Explore</Link>
                             </div>
                         </div>
                         <div className="col-lg-3 order-lg-2 col-md-6 p-0">
@@ -127,7 +127,7 @@ const ServicesPage = () => {
                             <div className="ss-text second-row">
                                 <h4>Strength training</h4>
                                 <p>Additionally, there should always be a qualified instructor in your gym to help you use the machines and exercise correctly. Priceless when you’re just starting out.</p>
-                                <a href="/">Explore</a>
+                                <Link to="/">Explore</Link>
                             </div>
                         </div>
                     </div>
@@ -141,8 +141,8 @@ const ServicesPage = () => {
                             <div className="bs-text service-banner">
                                 <h2>Exercise until the body obeys.</h2>
                                 <div className="bt-tips">Where health, beauty and fitness meet.</div>
-                                <a href="https://www.youtube.com/watch?v=EzKkl64rRbM" className="play-btn video-popup"><i
-                                > <FontAwesomeIcon icon={faCaretRight}></FontAwesomeIcon> </i></a>
+                                <Link to="https://www.youtube.com/watch?v=EzKkl64rRbM" className="play-btn video-popup"><i
+                                > <FontAwesomeIcon icon={faCaretRight}></FontAwesomeIcon> </i></Link>
                             </div>
                         </div>
                     </div>
@@ -164,7 +164,7 @@ const ServicesPage = () => {
 
                         {
                             enroll.map(enrolls =>
-                                <div key={enrolls.id} className="col-lg-4 col-md-8">
+                                <div key={enrolls.id}  style={{background:`url(${enrolls.img})`, backgroundSize: 'cover'}} className="col-lg-4 col-md-8">
                                     <div className="ps-item">
                                         <h3>{enrolls.name}</h3>
                                         <div className="pi-price">

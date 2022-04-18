@@ -1,4 +1,4 @@
-# Fitness Gym Center
+# The Fitness Gym Center
 
 ## Project link
 
@@ -6,13 +6,16 @@ Site live link: [https://assignment-9-rahat.netlify.app/](https://assignment-9-r
 
 ## Github link
 
-Github link: [https://github.com/programming-hero-web-course-4/product-analysis-website-RAHAT-RH](https://github.com/programming-hero-web-course-4/product-analysis-website-RAHAT-RH)
+Github link: [https://github.com/programming-hero-web-course-4/independent-service-provider-RAHAT-RH](https://github.com/programming-hero-web-course-4/independent-service-provider-RAHAT-RH)
 
-### About Amazon Home Theater System
+### About The Fitness Gym Center
 
+* Use Google Firebase
+* Use Firebase hook
 * Use custom link for active route menu.
 * Use External hook.
-* Added reChart line chart, pai chart, area chart, BarChart
+* Private Router
+* use External hook
 * Use Bootstrap Css
 
 
