@@ -12,7 +12,7 @@ import CustomLink from '../CustomLink/CustomLink';
 
 const Header = () => {
     const navigate = useNavigate();
-    const [user, loading, error] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
     if(loading){
         <p>loading....</p>
     }
@@ -36,11 +36,11 @@ const Header = () => {
                             <CustomLink className='ms-4 text-decoration-none nav-text mt-2 ' to="/blog">Our Blog</CustomLink>
                             <CustomLink className='ms-4 text-decoration-none nav-text mt-2 ' to="/signup">Sign Up</CustomLink>
                             {
-                                user?.email ?  <button onClick={logout} className='ms-4 text-decoration-none nav-text text-white btn btn-danger' >Log out</button> : <CustomLink className='ms-4 text-decoration-none nav-text text-white' to="/login">Log In</CustomLink>
+                                user?.uid ?  <button onClick={logout} className='ms-4 text-decoration-none nav-text text-white btn btn-danger' >Log out</button> : <CustomLink className='ms-4 text-decoration-none nav-text text-white' to="/login">Log In</CustomLink>
                             }
 
                             {
-                                user?.email && <NavLink className='ms-2 text-decoration-none nav-text' to="/">{user.email}</NavLink>
+                                user?.uid && <NavLink className='ms-2 text-decoration-none nav-text' to="/">{user.email}</NavLink>
                             }
                             
                         </Nav>

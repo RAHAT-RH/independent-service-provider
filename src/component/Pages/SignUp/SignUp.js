@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSendEmailVerification, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -51,11 +51,12 @@ const SignUp = () => {
         confirmPassError: ""
     })
 
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user,  error4] = useCreateUserWithEmailAndPassword(auth);
+    const [sendEmailVerification] = useSendEmailVerification(auth);
    
     useEffect(()=>{
         if(user){
-            toast('Create Account Successfully')
+            toast('Create Account Successfully Email Verification Sent')
             navigate('/');
         }
     },[user])
@@ -102,8 +103,8 @@ const SignUp = () => {
     }
 
     useEffect(() => {
-        if (error) {
-            switch (error?.code) {
+        if (error4) {
+            switch (error4?.code) {
                 case "auth/invalid-email":
                     toast("Invalid email provided, please provide a valid email");
                     break;
@@ -114,14 +115,15 @@ const SignUp = () => {
                     toast("something went wrong");
             }
         }
-    }, [error]);
+    }, [error4]);
 
 
     // handle Form
 
     const handleForm = (event) => {
         event.preventDefault()
-        createUserWithEmailAndPassword(userInfo.email, userInfo.password);   
+        createUserWithEmailAndPassword(userInfo.email, userInfo.password);
+        sendEmailVerification(); 
     }
 
     // handle Google Sign In

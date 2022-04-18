@@ -77,7 +77,7 @@ const LogIn = () => {
                     toast("Wrong password. Intruder!!");
                     break;
                 default:
-                    toast("something went wrong");
+                    toast("Valid Email and Password");
             }
         }
     }, [error]);
@@ -133,7 +133,7 @@ const LogIn = () => {
 
                 <input onBlur={handlePassword} type="password" placeholder="password" />
                 <div className='d-flex justify-content-between'>
-                <p className=''> <Link to='signup'>Sign Up</Link>  New Account</p>
+                <p className=''> <Link to='/signup'>Sign Up</Link>  New Account</p>
                 <p className=''>Forget password? <Link to='/reset-password'>Click Here</Link> </p>
                 </div>
                 {errors?.passwordError && <p className="error-message">{errors.passwordError}</p>}
