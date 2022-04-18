@@ -2,7 +2,7 @@
 
 ## Project link
 
-Site live link: [https://assignment-9-rahat.netlify.app/](https://assignment-9-rahat.netlify.app/)
+Site live link: [https://gym-assignment-5c1e6.web.app/](https://gym-assignment-5c1e6.web.app/)
 
 ## Github link
 
